@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" class="bg-slate-950">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RedStone — Modular Oracle Network for On-Chain Finance</title>
+    <meta name="description" content="RedStone delivers modular oracle infrastructure powering secure on-chain finance across 110+ blockchains and 1,300 assets." />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              redstone: {
+                red: '#00FFC6',
+                mint: '#00BFA6',
+                gold: '#F5B800',
+                midnight: '#0A0F1C',
+                hero: '#0D172A',
+                card: '#111827'
+              }
+            },
+            fontFamily: {
+              sans: ['"Inter var"', 'Inter', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-200">
+    <div class="accent-blur red -top-40 left-10"></div>
+    <div class="accent-blur gold top-10 right-10"></div>
+
+    <header class="sticky top-0 z-40 border-b border-white/5 bg-slate-950/70 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-8 px-4 py-4 sm:px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="./assets/Img/ChatGPT Image Jun 8, 2025, 11_29_25 AM.png" alt="LearningKripto" class="h-11 w-11 rounded-full border border-redstone.red/40 object-cover" />
+          <div class="flex flex-col leading-tight">
+            <span class="text-base font-semibold text-white">LearningKripto</span>
+            <span class="text-xs text-slate-400">Belajar Kripto Harian</span>
+          </div>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
+          <a href="#products" class="transition hover:text-redstone.red">Produk</a>
+          <a href="price-feeds.html" class="transition hover:text-redstone.red">Sumber Data</a>
+          <a href="integrations.html" class="transition hover:text-redstone.red">Kolaborasi</a>
+          <a href="resources.html" class="transition hover:text-redstone.red">Masukan</a>
+        </nav>
+        <div class="hidden items-center gap-3 md:flex">
+          <a href="https://docs.redstone.finance" class="rounded-full border border-white/10 px-5 py-2 text-sm text-slate-200 transition hover:border-redstone.red/60 hover:text-white">Docs</a>
+          <a href="#contact" class="rounded-full bg-redstone.gold px-5 py-2 text-sm font-semibold text-redstone.midnight transition hover:bg-redstone.red hover:text-redstone.midnight">Daftar Demonstrasi</a>
+        </div>
+        <button type="button" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-200 md:hidden" aria-label="Toggle menu" data-nav-toggle>
+          <span class="text-xl">☰</span>
+        </button>
+      </div>
+      <div class="hidden border-t border-white/5 bg-slate-950/95 md:hidden" data-nav-menu>
+        <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-sm">
+          <a href="#products" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Produk</a>
+          <a href="price-feeds.html" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Sumber Data</a>
+          <a href="integrations.html" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Kolaborasi</a>
+          <a href="resources.html" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Masukan</a>
+          <a href="https://docs.redstone.finance" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Docs</a>
+          <a href="#contact" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Daftar Demonstrasi</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gradient-hero grid-overlay relative overflow-hidden pb-24 pt-20 sm:pb-32 sm:pt-28">
+        <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_1fr]">
+          <div class="flex flex-col gap-10" data-animate>
+            <span class="inline-flex w-fit items-center gap-2 rounded-full border border-redstone.red/30 bg-redstone.red/10 px-3 py-1 text-xs uppercase tracking-wide text-redstone.gold">
+              Skalabilitas Modul • Kualitas Terbaik
+            </span>
+            <h1 class="text-3xl font-semibold text-white sm:text-5xl">
+              Belajar Kripto dari Nol sampai Mahir dalam <span class="text-redstone.red">+60 Hari</span>.
+            </h1>
+            <p class="max-w-xl text-lg text-slate-300">
+              LearningKripto menyediakan berita seputar kripto dan dunia web3 secara update dari multi sumber terpercaya.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#contact" class="rounded-full bg-redstone.gold px-6 py-3 text-sm font-semibold text-redstone.midnight shadow-soft transition hover:bg-redstone.red hover:text-redstone.midnight">Daftar Demonstrasi</a>
+              <a href="https://www.tiktok.com/@learningkripto" class="link-underline text-sm text-slate-300 transition hover:text-white">50+ Video Konten</a>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-3" data-metrics></div>
+          </div>
+          <div class="relative" data-animate>
+            <div class="absolute inset-0 rounded-3xl bg-redstone.red/20 blur-3xl"></div>
+            <div class="relative flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-slate-950/80 p-6 backdrop-blur">
+              <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-redstone.red/20 to-redstone.gold/10 p-6 text-sm text-slate-200">
+                <p class="text-xs uppercase tracking-wide text-redstone.gold">Sumber Materi</p>
+                <p class="mt-2 text-base text-white">Lebih dari 10+ sumber berita dan materi yang dibagikan</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+                <p class="text-xs uppercase tracking-wide text-slate-400">Pengembangan Terbaru</p>
+                <ul class="mt-3 flex flex-col gap-3 text-sm text-slate-300">
+                  <li class="flex items-center justify-between">
+                    <span>List Notion Airdrop</span>
+                    <span class="text-redstone.red">Aktif</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>Konten Harian di Tiktok</span>
+                    <span class="text-redstone.gold">Hiatus</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>E-book studi kripto</span>
+                    <span class="text-redstone.red">Segera</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="rounded-2xl border border-white/5 bg-slate-950/70 p-6 text-sm text-slate-300">
+                <p class="text-xs uppercase tracking-wide text-slate-400">Performa &amp; Konsistensi</p>
+                <div class="mt-3">
+                  <p class="text-base text-white">Setiap hari, LearningKripto mengunggah minimal satu update terbaru seputar pasar dan teknologi blockchain.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 border-t border-white/5">
+          <div class="ticker" data-ticker>
+            <div class="ticker-track px-4 py-6" data-ticker-track>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Notion</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">LynkId</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Farcaster</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Twitter</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">TikTok</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Instagram</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Youtube</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Telegram</span>
+              <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Discord</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="relative py-24 sm:py-32">
+        <div class="accent-blur red -z-10 top-1/2 left-20 hidden sm:block"></div>
+        <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_1fr]">
+          <div class="flex flex-col gap-6" data-animate>
+            <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.red">Produk</span>
+            <h2 class="text-3xl font-semibold text-white sm:text-4xl">LearningKripto — menghadirkan berita dan edukasi kripto dari berbagai sumber terpercaya di seluruh dunia.</h2>
+            <p class="max-w-xl text-base text-slate-300">
+              Kami mengkurasi informasi terbaik seputar blockchain, airdrop, trading, dan tren web3 agar kamu selalu selangkah lebih maju.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 text-xs text-slate-400">
+              <span class="rounded-full border border-white/10 px-3 py-1">Program Pembelajaran</span>
+              <span class="rounded-full border border-white/10 px-3 py-1">Integritas-data akurat</span>
+              <span class="rounded-full border border-white/10 px-3 py-1">Keuntungan potensial</span>
+            </div>
+          </div>
+          <div class="grid gap-5" data-products data-animate></div>
+        </div>
+      </section>
+
+      <section class="gradient-secondary py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-12 lg:grid-cols-[1.1fr_1fr]">
+            <div class="flex flex-col gap-6" data-animate>
+              <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.gold">Perangkat Data</span>
+              <h2 class="text-3xl font-semibold text-white sm:text-4xl">Telah diaudit dan diverifikasi oleh pihak LearningKripto.</h2>
+              <p class="max-w-lg text-base text-slate-200">
+                Setiap implementasi data diperiksa oleh analis, penguji keaslian data, dan pemantauan berkelanjutan yang didukung oleh semua pihak tim dengan pemberitahuan secara real-time.
+              </p>
+            </div>
+            <div class="flex flex-col gap-6" data-animate>
+              <p class="text-sm text-slate-400">Beberapa referensi sumber diambil dari media crypto terbesar.</p>
+              <div class="flex flex-wrap gap-3" data-audits></div>
+              <div class="flex flex-wrap items-center gap-4">
+                <img src="./assets/Img logo/1. Crypto Wave.jpg" alt="Crypto Wave" class="h-16 w-16 rounded-full border border-white/10 object-cover" />
+                <img src="./assets/Img logo/2. Akademi Crypto.jpg" alt="Akademi Crypto" class="h-16 w-16 rounded-full border border-white/10 object-cover" />
+                <img src="./assets/Img logo/3. Airdrop Finder.jpg" alt="Airdrop Finder" class="h-16 w-16 rounded-full border border-white/10 object-cover" />
+                <img src="./assets/Img logo/4. Coinvestasi.jpg" alt="Coinvestasi" class="h-16 w-16 rounded-full border border-white/10 object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+            <div class="flex flex-col gap-8" data-animate>
+              <div>
+                <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.red">Platform</span>
+                <h2 class="mt-3 text-3xl font-semibold text-white sm:text-4xl">Diimplementasikan di mana saja. Disebarkan di mana saja.</h2>
+              </div>
+              <p class="text-base text-slate-300">
+                LearningKripto terintegrasi dengan jejaring sosial, jaringan media, dan media percakapan. Digabungkan dan sesuaikan fitur baca tulis untuk diterapkan di dunia crypto dan web3.
+              </p>
+              <div class="grid grid-cols-2 gap-3 sm:grid-cols-3" data-ecosystem></div>
+            </div>
+            <div class="flex flex-col gap-6 rounded-3xl border border-white/10 bg-slate-950/60 p-6" data-animate>
+              <h3 class="text-lg font-semibold text-white">Proteksi Aktif</h3>
+              <div class="flex flex-col gap-4 text-sm text-slate-200">
+                <p><span class="text-redstone.gold">+89%</span> dari semua proyek awal mengandalkan informasi dari Airdrop Finder.</p>
+                <p>7 media digunakan pada tahun pertama.</p>
+                <p>Modul Khusus dengan jaminan pemahaman dasar.</p>
+              </div>
+              <a href="integrations.html" class="link-underline text-sm text-slate-300 transition hover:text-white">Telusuri Kolaborasi</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gradient-secondary py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="flex flex-col gap-10" data-animate>
+            <div>
+              <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.gold">Ulasan</span>
+              <h2 class="mt-3 text-3xl font-semibold text-white sm:text-4xl">Disampaikan oleh audiens yang menilai topik konteks</h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3" data-testimonials></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="flex flex-col gap-10" data-animate>
+            <div class="flex flex-wrap items-end justify-between gap-6">
+              <div>
+                <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.red">Update terbaru</span>
+                <h2 class="mt-3 text-3xl font-semibold text-white sm:text-4xl">Tetap ikuti rencana strategis LearningKripto</h2>
+              </div>
+              <a href="resources.html" class="rounded-full border border-white/10 px-5 py-2 text-sm text-slate-200 transition hover:border-redstone.red/60 hover:text-white">Lihat semua sumber</a>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3" data-news></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="gradient-secondary py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-slate-950/80 px-4 py-16 sm:px-10" data-animate>
+          <div class="mx-auto flex max-w-3xl flex-col gap-8 text-center">
+            <h2 class="text-3xl font-semibold text-white sm:text-4xl">Let’s design your oracle rollout.</h2>
+            <p class="text-base text-slate-300">
+              Tell us about your protocol and target chains. We’ll help architect the right model, integrations, and go-live timeline.
+            </p>
+          </div>
+          <form class="mx-auto mt-12 grid max-w-3xl gap-6 text-sm" data-contact-form>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="flex flex-col gap-2 text-left">
+                <span class="text-xs uppercase tracking-[0.2em] text-slate-400">Name</span>
+                <input type="text" name="name" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 placeholder:text-slate-500" placeholder="Satoshi Nakamoto" />
+              </label>
+              <label class="flex flex-col gap-2 text-left">
+                <span class="text-xs uppercase tracking-[0.2em] text-slate-400">Work Email*</span>
+                <input type="email" name="email" required class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 placeholder:text-slate-500" placeholder="you@protocol.xyz" />
+              </label>
+            </div>
+            <label class="flex flex-col gap-2 text-left">
+              <span class="text-xs uppercase tracking-[0.2em] text-slate-400">Protocol / Company</span>
+              <input type="text" name="company" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 placeholder:text-slate-500" placeholder="Your protocol name" />
+            </label>
+            <label class="flex flex-col gap-2 text-left">
+              <span class="text-xs uppercase tracking-[0.2em] text-slate-400">How can we help?*</span>
+              <textarea name="message" required rows="4" class="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 placeholder:text-slate-500" placeholder="Share integration goals, target chains, launch timelines..."></textarea>
+            </label>
+            <div class="flex flex-col gap-3 text-left">
+              <button type="submit" class="rounded-full bg-redstone.gold px-6 py-3 text-sm font-semibold text-redstone.midnight transition hover:bg-redstone.red hover:text-redstone.midnight">Submit request</button>
+              <span class="text-xs text-slate-400" data-form-status></span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/5 bg-slate-950/80">
+      <div class="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 sm:px-6 md:flex-row md:justify-between md:gap-16">
+        <div class="max-w-sm text-sm text-slate-400">
+          <p>RedStone delivers modular oracle infrastructure that scales with every chain and asset class.</p>
+        </div>
+        <div class="flex flex-wrap gap-6 text-sm text-slate-400">
+          <a href="price-feeds.html" class="transition hover:text-white">Sumber Data</a>
+          <a href="integrations.html" class="transition hover:text-white">Kolaborasi</a>
+          <a href="resources.html" class="transition hover:text-white">Masukan</a>
+          <a href="https://docs.redstone.finance" class="transition hover:text-white">Docs</a>
+        </div>
+      </div>
+      <div class="border-t border-white/5">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6 text-xs text-slate-500 sm:px-6">
+          <span>© <span data-current-year></span> RedStone Labs. All rights reserved.</span>
+          <div class="flex gap-4">
+            <a href="https://twitter.com/redstone_defi" class="transition hover:text-white">X</a>
+            <a href="https://discord.gg/redstone" class="transition hover:text-white">Discord</a>
+            <a href="https://github.com/redstonexyz" class="transition hover:text-white">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/data/site-data.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

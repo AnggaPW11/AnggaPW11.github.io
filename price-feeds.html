@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" class="bg-slate-950">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RedStone Price Feeds — Programmable Oracle Models</title>
+    <meta name="description" content="Explore RedStone’s price feed models, coverage, and integration workflow for secure on-chain finance." />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              redstone: {
+                red: '#00FFC6',
+                mint: '#00BFA6',
+                gold: '#F5B800',
+                midnight: '#0A0F1C',
+                hero: '#0D172A',
+                card: '#111827'
+              }
+            },
+            fontFamily: {
+              sans: ['"Inter var"', 'Inter', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-200">
+    <header class="sticky top-0 z-40 border-b border-white/5 bg-slate-950/70 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-8 px-4 py-4 sm:px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="./assets/Img/ChatGPT Image Jun 8, 2025, 11_29_25 AM.png" alt="LearningKripto" class="h-11 w-11 rounded-full border border-redstone.red/40 object-cover" />
+          <div class="flex flex-col leading-tight">
+            <span class="text-base font-semibold text-white">LearningKripto</span>
+            <span class="text-xs text-slate-400">Belajar Kripto Harian</span>
+          </div>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
+          <a href="index.html#products" class="transition hover:text-redstone.red">Produk</a>
+          <a href="price-feeds.html" class="text-white">Sumber Data</a>
+          <a href="integrations.html" class="transition hover:text-redstone.red">Kolaborasi</a>
+          <a href="resources.html" class="transition hover:text-redstone.red">Masukan</a>
+        </nav>
+        <div class="hidden items-center gap-3 md:flex">
+          <a href="https://docs.redstone.finance" class="rounded-full border border-white/10 px-5 py-2 text-sm text-slate-200 transition hover:border-redstone.red/60 hover:text-white">Docs</a>
+          <a href="index.html#contact" class="rounded-full bg-redstone.gold px-5 py-2 text-sm font-semibold text-redstone.midnight transition hover:bg-redstone.red hover:text-redstone.midnight">Daftar Demonstrasi</a>
+        </div>
+        <button type="button" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-200 md:hidden" aria-label="Toggle menu" data-nav-toggle>
+          <span class="text-xl">☰</span>
+        </button>
+      </div>
+      <div class="hidden border-t border-white/5 bg-slate-950/95 md:hidden" data-nav-menu>
+        <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-sm">
+          <a href="index.html#products" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Produk</a>
+          <a href="price-feeds.html" class="rounded-lg px-3 py-2 text-white transition hover:bg-white/5">Sumber Data</a>
+          <a href="integrations.html" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Kolaborasi</a>
+          <a href="resources.html" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Masukan</a>
+          <a href="https://docs.redstone.finance" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Docs</a>
+          <a href="index.html#contact" class="rounded-lg px-3 py-2 text-slate-200 transition hover:bg-white/5">Daftar Demonstrasi</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="gradient-hero grid-overlay overflow-hidden pb-20 pt-20 sm:pb-28 sm:pt-28">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+            <div class="flex flex-col gap-8" data-animate>
+              <span class="inline-flex w-fit items-center gap-2 rounded-full border border-redstone.red/30 bg-redstone.red/10 px-3 py-1 text-xs uppercase tracking-wide text-redstone.gold">Price Feeds</span>
+              <h1 class="text-3xl font-semibold text-white sm:text-5xl">Programmable price feeds engineered for every latency profile.</h1>
+              <p class="max-w-2xl text-lg text-slate-300">
+                Launch feeds across EVM, rollups, and appchains with modular adapters, real-time anomaly detection, and deterministic delivery backed by restaked security.
+              </p>
+              <div class="flex flex-wrap items-center gap-4">
+                <a href="https://docs.redstone.finance/docs/price-feeds/overview" class="rounded-full bg-redstone.gold px-6 py-3 text-sm font-semibold text-redstone.midnight transition hover:bg-redstone.red hover:text-redstone.midnight">Integrate now</a>
+                <a href="index.html#contact" class="link-underline text-sm text-slate-300 transition hover:text-white">Talk to an oracle engineer</a>
+              </div>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-slate-950/80 p-6" data-animate>
+              <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Coverage</p>
+                <div class="mt-5 grid grid-cols-2 gap-6 text-sm text-slate-200">
+                  <div>
+                    <p class="text-3xl font-semibold text-white">1,300+</p>
+                    <p class="text-xs text-slate-400">Assets</p>
+                  </div>
+                  <div>
+                    <p class="text-3xl font-semibold text-white">110+</p>
+                    <p class="text-xs text-slate-400">Networks</p>
+                  </div>
+                  <div>
+                    <p class="text-3xl font-semibold text-white">50+</p>
+                    <p class="text-xs text-slate-400">Data sources</p>
+                  </div>
+                  <div>
+                    <p class="text-3xl font-semibold text-white">0</p>
+                    <p class="text-xs text-slate-400">Mispricing events</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 rounded-2xl border border-redstone.red/40 bg-redstone.red/10 p-6 text-sm text-slate-200">
+                <p class="text-xs uppercase tracking-[0.3em] text-redstone.gold">Update cadence</p>
+                <p class="mt-3 text-base text-white">Push feeds: 8s median • Pull feeds: on-demand • Streaming feeds: 420ms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="flex flex-col gap-12" data-animate>
+            <div class="max-w-3xl">
+              <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.red">Oracle Models</span>
+              <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">Pick the delivery style that matches your protocol.</h2>
+              <p class="mt-3 text-base text-slate-300">
+                Combine push, pull, and streaming feeds with programmable triggers, fallback paths, and guardrails tuned for your volatility and gas budget profile.
+              </p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3" data-models></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gradient-secondary py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+            <div class="flex flex-col gap-8" data-animate>
+              <div>
+                <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.gold">Rapid onboarding</span>
+                <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">New markets live in as little as 48 hours.</h2>
+              </div>
+              <p class="text-base text-slate-200">
+                Modular adapters and automated listing playbooks let us list complex assets fast — from LRTs and RWAs to bespoke volatility baskets. Shadow deployments validate performance before mainnet switch-overs.
+              </p>
+              <div class="grid gap-3 text-sm text-slate-200">
+                <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+                  <p class="text-xs uppercase tracking-[0.3em] text-redstone.gold">Multi-layer validation</p>
+                  <p class="mt-2">Medianizer, statistical outlier rejection, and human-in-the-loop escalation ensure clean data even in extreme volatility.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+                  <p class="text-xs uppercase tracking-[0.3em] text-redstone.gold">Fail-safe delivery</p>
+                  <p class="mt-2">Distributed signers and storage proofs protect feeds against downtime and feeder compromise.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6 rounded-3xl border border-white/10 bg-slate-950/70 p-6" data-animate>
+              <h3 class="text-lg font-semibold text-white">Launch checklist</h3>
+              <ul class="flex flex-col gap-4 text-sm text-slate-300">
+                <li class="flex gap-3"><span class="text-redstone.red">●</span><span>Define assets, aggregation rules, and target deviation thresholds.</span></li>
+                <li class="flex gap-3"><span class="text-redstone.red">●</span><span>Select the adapter (push/pull/stream) and failover behaviour.</span></li>
+                <li class="flex gap-3"><span class="text-redstone.red">●</span><span>Run testnet & shadow deployments with automated alerts.</span></li>
+                <li class="flex gap-3"><span class="text-redstone.red">●</span><span>Go live with 24/7 monitoring and SLO-backed support.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-12 lg:grid-cols-[1.1fr_1fr]">
+            <div class="flex flex-col gap-8" data-animate>
+              <div>
+                <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.red">Integration workflow</span>
+                <h2 class="mt-4 text-3xl font-semibold text-white sm:text-4xl">From discovery to mainnet in four steps.</h2>
+              </div>
+              <p class="text-base text-slate-300">
+                Work with RedStone’s integration engineers to scope requirements, co-design adapters, and launch with SLO-backed monitoring across every network you target.
+              </p>
+            </div>
+            <div class="grid gap-5" data-integration-steps data-animate></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gradient-secondary py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
+            <div class="flex flex-col gap-6" data-animate>
+              <span class="text-sm font-semibold uppercase tracking-[0.3em] text-redstone.gold">FAQ</span>
+              <h2 class="text-3xl font-semibold text-white sm:text-4xl">Answers for oracle architects.</h2>
+              <p class="text-base text-slate-200">
+                Everything you need to know about updates, coverage, and the safeguards that protect RedStone feeds during volatility.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4" data-faq data-animate></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/5 bg-slate-950/80">
+      <div class="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 sm:px-6 md:flex-row md:justify-between md:gap-16">
+        <div class="max-w-sm text-sm text-slate-400">
+          <p>RedStone delivers modular oracle infrastructure that scales with every chain and asset class.</p>
+        </div>
+        <div class="flex flex-wrap gap-6 text-sm text-slate-400">
+          <a href="index.html#products" class="transition hover:text-white">Produk</a>
+          <a href="price-feeds.html" class="transition hover:text-white">Sumber Data</a>
+          <a href="integrations.html" class="transition hover:text-white">Kolaborasi</a>
+          <a href="resources.html" class="transition hover:text-white">Masukan</a>
+          <a href="https://docs.redstone.finance" class="transition hover:text-white">Docs</a>
+        </div>
+      </div>
+      <div class="border-t border-white/5">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6 text-xs text-slate-500 sm:px-6">
+          <span>© <span data-current-year></span> RedStone Labs. All rights reserved.</span>
+          <div class="flex gap-4">
+            <a href="https://twitter.com/redstone_defi" class="transition hover:text-white">X</a>
+            <a href="https://discord.gg/redstone" class="transition hover:text-white">Discord</a>
+            <a href="https://github.com/redstonexyz" class="transition hover:text-white">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/data/site-data.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
